@@ -1,0 +1,20 @@
+1. In the program we are creating a multi threaded web proxy server using java programming language.  Client is the web browser. We have also implemented cache and all details of client and server are printed in log file.
+2. At the time of execution if no arguement is passed then by default it runs on port 8080.
+3. We are creating a file log.txt to store all the information about http messages exchanged by the proxy server like host address, local port, host name, request length, response length and time elapsed.
+4. ServerSocket is the main socket in main thread.
+5. We are allowing maximum of 1000 threads so that all resources are not taken.
+6. We are using concurrent hash map for cache. It is in main memory but can also be written into a disk.
+7. We are using Cache Time. Cache time is the time we took to get the resource from actual web server, we will be using this to calculate improvement after using cache.
+8. Main thread keeps listening for new clients and it creates new thread for every request- response.
+9. We take all the request header components. We use whole header to check in cache(In case of multiple clients we dont want to mess up with their cookies).
+10. We are reading request byte from client socket and creating our header message.
+11. After reading request byte we use GET method to know what resource we need.
+12. We are then checking for cache, if its there then return cached data.
+13. Then we calculate elapsed time and time without cache and the improvement can be seen in RTT.
+14. We calculate RTT with cache and RTT without cache and the improvement(system nano time - start time).
+15. If the request is not there in cache then we go to the server and get the response.
+16. If response is 200 then its correct other then 200 its an error. (404 is file not found)
+17. If we are getting an error then we are logging it into file, otherwise we are reading data from the server, writing it to client and saving it into cache for future reference.
+18. We are printing server information in log file.
+
+

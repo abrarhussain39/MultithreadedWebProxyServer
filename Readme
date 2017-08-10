@@ -1,0 +1,22 @@
+Submitted By Syed Abrar Ullah Hussaini	
+ID	1001236808
+Multithreaded Web proxy server using java programming language
+
+1. Open firefox web browser, and go to settings-> Connection-> Connection Settings. 
+2. Click on Manual Proxy Configuration
+3. Set your http proxy ip and port number ("port number is 8080”).
+4. Compile the program using command javac Server.java
+5. Run the program using command java Server
+6. You can pass the argument or by default it runs on port 8080.
+7. Send http request through firefox browser. 
+
+References
+1. http://download.java.net/jdk7/archive/b123/docs/api/java/net/HttpURLConnection.html
+2.http://stackoverflow.com/questions/20020604/java-getting-a-servers-hostname-and-or-ip-address-from-client
+3.http://stackoverflow.com/questions/613307/read-error-response-body-in-java
+4.http://www.tutorialspoint.com/java/io/file_createnewfile.htm
+5.http://stackoverflow.com/questions/2108072/how-do-i-get-the-remote-ip-address-with-httpurlconnection
+6.http://stackoverflow.com/questions/6340999/create-an-arraylist-of-bytes
+7.http://stackoverflow.com/questions/104184/is-it-safe-to-get-values-from-a-java-util-hashmap-from-multiple-threads-no-modi
+8. http://stackoverflow.com/questions/24772041/how-to-get-the-source-port-being-used-by-java-net-httpurlconnection
+9. http://stackoverflow.com/questions/30307382/how-to-append-text-to-file-in-java-8-using-specified-charset
